@@ -1,0 +1,11 @@
+- name: check value is greter than 10 or not
+  hosts: local
+  connections: local
+  vars: 
+    my_numhber: 14
+  tasks:
+    - nmae: print the info
+      ansible.builtin.debug:
+       msg: "given number is {{ my_number }} greater than 10"
+      when my_number > 10
+        
