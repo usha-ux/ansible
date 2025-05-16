@@ -19,7 +19,7 @@
           duaration: 2hrs
           trainder: shiva
       ansible.builtin.debug:
-        msg: "course info: {{ course | dict2items}}"     
+        msg: "course info: {{ course | dict2items }}"     
 
     - name: convert list into map
       vars:
@@ -29,4 +29,4 @@
           {'key': 'trainder', 'value': 'shiva'}
 
       ansible.builtin.debug:
-        msg: "course info: {{ course | items2dict}}"    
+        msg: "course info: {{ course | items2dict }}"    
